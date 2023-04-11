@@ -8,6 +8,7 @@ var stepNum;
 var date = new Date();
 
 /* Start of code from https://www.coderchamp.com/formatting-dates-in-javascript/ */
+/* creating an object to be insterted into the toLocalDateString function on how to format the date */
 const options = {
   day: '2-digit',
   month: 'long',
