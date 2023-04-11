@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computation Studio</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h3>Estimated Pick Up Time</h3>
+        <h1 class="red" id="pickUpDate"></h1>
+    </div>
+    <div class="processImg">
+        <img id="updateImg" src="">
+    </div>
+    <div class="progressBar flex">
+        <div class="rectangle start" id="rectangle1"></div>
+        <div class="rectangle" id="rectangle2"></div>
+        <div class="rectangle" id="rectangle3"></div>
+        <div class="rectangle end" id="rectangle4"></div>
+    </div>
+    <div style="margin-bottom: 60px;">
+        <h2 id="updateTxt">Repairing Your Tires...</h2>
+        <a href="#" class="twelve">Get Repair Updates</a>
+    </div>
+    <div class="greyBox mechanic flex cAlign">
+        <div class="img sarah"><img src="img/sarah.png"></div>
+        <h3 class="lAlign cAlign noMargin">Sarah is performing your tire service today</h3>
+        <div class="img cAlign"><img class="chevron" src="img/chevron.svg"></div>
+    </div>
+    <div class="greyBox flex cAlign">
+        <div class="img cAlign" style="padding-right: 5px;"><img class="shop cAlign" src="img/shop.png"></div>
+        <div class="cAlign">
+            <p class="semibold lAlign noMargin">Bayfield Auto Repair</p>
+            <p class="lAlign noMargin" style="font-size: 12px;">1200 Bayfield St. Oakville ON</p>
+        </div>
+        <div class="img cAlign contact"><img src="img/phone.svg"></div>
+        <div class="img cAlign contact"><img src="img/message.svg"></div>
+    </div>
+    <div class="greyBox mechanic flex">
+        <h3 class="lAlign cAlign" style="margin: 0; width: 90%">Repair History</h3>
+        <div class="img cAlign"><img class="chevron" src="img/chevron.svg"></div>
+    </div>
+    <div class="details">
+        <div class="icon lAlign flex">
+            <div class="img"><img src="img/receipt.svg"></div>
+            <h3 style="font-size: 20px; margin-left: 10px;" class="semibold noMargin">Repair Details</h3>
+        </div>
+        <div class="carInfo">
+            <p class="lAlign">Order Number</p>
+            <p class="rAlign semibold">#7854-9064-SA</p>
+            <p class="lAlign">Vehicle Make & Model</p>
+            <p class="rAlign semibold">Toyota Camry</p>
+            <p class="lAlign">Year of Manufacture</p>
+            <p class="rAlign semibold">2015</p>
+        </div>
+        <p class="semibold lAlign header">Problem Description</p>
+        <p class="lAlign noMargin">Need new tires, current tires are worn out and need to be replaced.</p>
+        <p class="semibold lAlign noMargin header">Additional Notes:</p>
+        <p class="lAlign noMargin">Prefer all-season tires suitable for driving in both wet and dry conditions.</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+body {
+    text-align: center;
+    padding: 20px;
+    color: #0A122A;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+/* General Classes Used on Multiple Elements */
+.semibold {
+    font-weight: 600;
+}
+
+.lAlign {
+    text-align: left;
+}
+
+.rAlign {
+    text-align: right;
+}
+
+.cAlign {
+    align-self: center;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    width: 100%;
+}
+
+.red {
+    color: #AF2C27;
+}
+
+.lBlue {
+    background-color: #8AB3C9;
+}
+
+.grey {
+    background-color: #EEEEEE;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.twelve {
+    font-size: 14px;
+}
+
+a {
+    color: #0A122A;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.processImg {
+    padding: 45px 22% 40px 22%;
+}
+
+
+/*creating progress bar*/
+.progressBar {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.rectangle {
+    width: 24%;
+    height: 15px;
+    background-color: #EEEEEE; 
+}
+
+.start {
+    border-radius: 10px 0 0 10px;
+}
+
+.end {
+    border-radius: 0 10px 10px 0;
+}
+
+/* Start of animation code from https://codepen.io/kay8/pen/azKbjN */
+
+/* Animation for steps that have already been completed */
+.completed {
+    animation-name: completed;
+    animation-duration: 0.5s;
+    background: linear-gradient(to right, #8AB3C9 50%, #EEEEEE 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes completed {
+    0% {background-position: right bottom;}
+    100% {background-position: left bottom;}
+}
+
+/* Animation for the current step */
+.current {
+    animation-name: completed;
+    animation-duration: 1s;
+    background: linear-gradient(to right, #0A122A 50%, #EEEEEE 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes current {
+    0% {background-position: right bottom;}
+    100% {background-position: left bottom;}
+}
+
+/* End of animation code from https://codepen.io/kay8/pen/azKbjN */
+
+
+/* Common element used to structure the machanic, repair shop, and repair history boxes */
+.greyBox {
+    background-color: #F6F6F6;
+    border: solid 1px #CDCDCD;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.07);
+    justify-content: space-between;
+    padding: 15px;
+    margin: 30px 0;
+}
+
+.sarah {
+    width: 20%;
+    padding-right: 20px;
+}
+
+.chevron {
+    width: 15px;
+    padding-left: 5px;
+}
+
+.shop {
+    width: 100%;
+    max-width: 78px;
+}
+
+.contact {
+    width: 28px;
+    margin-left: 10px;
+}
+
+/* Repair Details */
+.details {
+    border-top: solid 1px #CDCDCD;
+    padding-top: 27px;
+    margin-top: 40px;
+}
+
+.carInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0 40px 0;
+}
+
+.header {
+    margin: 30px 0 10px 0;
+}
