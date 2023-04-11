@@ -1,3 +1,11 @@
+/* =======================
+
+Computation Studio Final Project - by Julia Correia 
+-Made with JavaScript
+-An auto repair tracking solution that automtically updates based on inputs from the mechanic
+
+========================*/
+
 /* Variables */
 var step = document.getElementById("step");
 const updateTxt = document.getElementById("updateTxt");
